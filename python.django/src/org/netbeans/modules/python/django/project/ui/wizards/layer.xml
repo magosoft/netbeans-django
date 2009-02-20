@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.1//EN" "http://www.netbeans.org/dtds/filesystem-1_1.dtd">
+<filesystem>
+
+    <folder name="Actions">
+        <folder name="Project">
+            <file name="org-netbeans-modules-python-django-project-template-DjangoApplication.instance"/>
+        </folder>
+    </folder>
+    <folder name="Projects">
+        <folder name="Actions"/>
+        <folder name="org-netbeans-modules-python-django-project">
+            <folder name="Nodes">
+                <file name="org-netbeans-modules-python-django-project-ui-SourceNodeFactory.instance">
+                    <attr name="position" intvalue="150"/>
+                </file>
+            </folder>
+            <folder name="Lookup"/>
+        </folder>
+        
+    </folder>
+    
+    
+   
+    
+    <folder name="Shortcuts">
+        <file name="S-S.shadow">
+            <attr name="originalFile" stringvalue="Actions/Project/org-netbeans-modules-python-django-project-template-DjangoApplication.instance"/>
+        </file>
+    </folder>
+    <folder name="Templates">
+        <folder name="Project">
+            <folder name="Python">
+                <file name="DjangoProject.xml">
+                    <attr name="position" intvalue="500"/>
+                    <attr name="template" boolvalue="true"/>
+                    <attr name="SystemFileSystem.localizingBundle" stringvalue="org.netbeans.modules.python.django.project.Bundle"/>
+                    <attr name="SystemFileSystem.icon" urlvalue="nbresloc:/org/netbeans/modules/python/django/project/resource/django-icon-naive-16.png"/>
+                    <attr name="instantiatingIterator" methodvalue="org.netbeans.modules.python.django.project.template.NewDjangoProjectWizardIterator.createApplication"/>
+                    <attr name="instantiatingWizardURL" urlvalue="nbresloc:/org/netbeans/modules/python/django/project/template/EmptyDjangoProjectDescription.html"/>
+                </file>
+            </folder>
+        </folder>
+    </folder>
+
+    
+     <folder name="Templates">  
+        <folder name="Python">
+            <file name="urls.py" url="template/urls.template">                              
+            </file>
+            <file name="settings.py" url="template/settings.template"></file>
+            <file name="manage.py" url="template/manage.template"></file>
+            <file name="init.py" url="template/init.template"></file>
+            <file name="models.py" url="ui/wizards/models.template"></file>
+            <file name="views.py" url="ui/wizards/views.template"></file>
+            <file name="DjangoApplication.xml">
+                <attr name="SystemFileSystem.icon" urlvalue="nbresloc:/org/netbeans/modules/python/django/project/resource/django-icon-naive-16.png"/>
+                <attr name="SystemFileSystem.localizingBundle" stringvalue="org.netbeans.modules.python.django.project.Bundle"/>
+                <attr name="instantiatingIterator" newvalue="org.netbeans.modules.python.django.project.ui.wizards.PythonPackageWizardIterator"/>
+                <attr name="template" boolvalue="true"/>
+                <attr name="templateWizardURL" urlvalue="nbresloc:/org/netbeans/modules/python/django/project/ui/wizards/pythonPackage.html"/>
+            </file>
+        </folder>
+     </folder>
+        
+</filesystem>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- You may freely edit this file. See harness/README in the NetBeans platform -->
+<!-- for some information on what you could do (e.g. targets to override). -->
+<!-- If you delete this file and reopen the project it will be recreated. -->
+<project name="org.django" default="netbeans" basedir=".">
+    <description>Builds, tests, and runs the project org.django.</description>
+    <import file="nbproject/build-impl.xml"/>
+    
+    <property name="release.dir" location="release" />
+    <property name="django.version" value="1.0" />
+    <property name="django.build.dir" location="django-build/" />
+    <property name="django.build.version.dir" location="${django.build.dir}/django-${django.version}"/>
+   
+    
+    
+    <target name="init" depends="build-django,basic-init,files-init,build-init"/>
+    <property name="etc.dir" location="etc" />
+    <target name="build-django" >
+         <mkdir dir="${release.dir}" />
+        <mkdir dir="${django.build.dir}" />
+        <mkdir dir="${django.build.version.dir}" />
+        <unzip dest="${django.build.version.dir}" src="${etc.dir}/django-${django.version}.zip" />
+   </target>
+   
+   <target name="release" depends="files-init" if="has.release.dir">
+        <mkdir dir="${cluster}"/>
+        <property name="django.dist.dir" location="${cluster}/django-${django.version}"/>
+        <mkdir dir="${django.dist.dir}"/>
+        <copy todir="${django.dist.dir}">
+            <fileset dir="${django.build.version.dir}">
+                <patternset includes="${release.files}"/>
+            </fileset>
+        </copy>
+        
+    </target>
+   
+   
+
+    
+</project>

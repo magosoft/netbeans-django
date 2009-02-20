@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+OpenIDE-Module: org.django
+OpenIDE-Module-Layer: org/django/layer.xml
+OpenIDE-Module-Localizing-Bundle: org/django/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+
